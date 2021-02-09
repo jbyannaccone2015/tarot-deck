@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import tarotDeck from './Deck-array'
+import './Deck.css'
 
 // const PATH = './tarot_cards/'
 
@@ -14,10 +15,26 @@ function Deck() {
     
     function getCard() {
         const index = getRandomInt(deck.length);
+        isReversed()
         setCard(deck[index])
         // const postImg = require('./tarot_cards/' + card.img)
     }
 
+    function determineRand() {
+        const max = 1;
+        const min = 0;
+        return(Math.random() * (max - min + 1) + min)
+    }
+
+    function isReversed() {
+        const rev = determineRand()
+        if(rev === 0) {
+            card.reversed = false;
+        }
+        else if(rev === 1) {
+            card.reversed = true;
+        }
+    }
 
     useEffect(() => {
         setDeck(prev => prev.filter(crd => crd !== card))
@@ -29,15 +46,21 @@ function Deck() {
     const resetDeck = () => {
         setDeck(tarotDeck)
     }
+
+    function reversed() {
+        
+    }
     
     return (
-        <div>
-           {card ? <h1>You got {card.name}! </h1> : <h1>Click the button to pick a card</h1>}
-           <button onClick={getCard}>Get a Card</button>
-           <button onClick={resetDeck}>Reset Deck</button>
-           {/* <div>{card && card.img ? <img src={require(`${PATH}${card.img}`)} alt={card.name}/> : ""}</div> */}
-           <div>{card && card.img ? <img src={card.img} alt={card.name}/> : ""}</div>
-           <div>{card.meaning ? <div>{card.name} means {card.meaning} when upright!</div> : ""}</div>
+        <div className="table">
+            <div className="pagefunct">
+            {card ? <h1 className= "intro">You got {card.name}! </h1> : <h1 className="introAlt">Pick a card!</h1>}
+            <button className="btn1" onClick={getCard}>Get a Card</button>
+            <button className="btn2" onClick={resetDeck}>Reset Deck</button>
+            </div>
+            {/* <div>{card && card.img ? <img src={require(`${PATH}${card.img}`)} alt={card.name}/> : ""}</div> */}
+            <div>{card && card.img ? <img className="card" src={card.img} alt={card.name}/> : ""}</div>
+            <div className="meaning">{card.meaning ? <div>{card.name} means: <hr /> <span>{card.meaning} when upright!</span></div> : ""}</div>
         </div>
     )
 }

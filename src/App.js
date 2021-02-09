@@ -4,7 +4,7 @@ import Deck from './Components/Deck/Deck'
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Deck />
     </div>
   )
