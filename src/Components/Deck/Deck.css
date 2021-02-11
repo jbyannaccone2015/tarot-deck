@@ -65,8 +65,11 @@ span {
     height: 300px;
     width: 250px;
 }
-
-/* .reversed {
-    transform: rotateY(180deg);
-} */
+ .revCard {
+    margin-right: 90px;
+    margin-top: -310px;
+    height: 300px;
+    width: 250px;
+    transform: rotate(180deg);  
+ }
 

@@ -8,6 +8,8 @@ function Deck() {
     const [deck, setDeck] = useState(tarotDeck)
     const [card, setCard] = useState("") 
     const [position, setPosition] = useState(true)
+    const [seat, setSeat] = useState("upright")
+    const [style, setStyle] = useState("card")
     // const [image, setImage] = useState("")
 
     function getRandomInt(max) {
@@ -19,6 +21,11 @@ function Deck() {
         setCard(deck[index])
         reversed()
         console.log("Position is: " + position)
+        console.log("Meaning is:" + card.meaning)
+        seatDet()
+        console.log("The Alignment is:" + seat)
+        detStyle()
+        console.log("The Style is:" + style)
     }
 
     function determineRand() {
@@ -46,6 +53,24 @@ function Deck() {
         }
     }
 
+    function seatDet() {
+        if(position == false) {
+            setSeat("reversed")
+        }
+        else {
+            setSeat("upright")
+        }
+    }
+
+    function detStyle() {
+        if(position == false) {
+            setStyle("revCard")
+        }
+        else {
+            setStyle("card")
+        }
+    }
+
     
     return (
         <div className="table">
@@ -55,9 +80,8 @@ function Deck() {
             <button className="btn2" onClick={resetDeck}>Reset Deck</button>
             </div>
             {/* <div>{card && card.img ? <img src={require(`${PATH}${card.img}`)} alt={card.name}/> : ""}</div> */}
-            
-            <div>{card && card.img ? <img className="card" src={card.img} alt={card.name}/> : ""}</div>
-            <div className="meaning">{card.meaning ? <div>{card.name} means: <hr /> <span>{card.meaning} when upright!</span></div> : ""}</div>
+            <div>{card && card.img ? <img className={style} src={card.img} alt={card.name}/> : ""}</div>
+            <div className="meaning">{card.meaning ? <div>{card.name} means: <hr /> <span>{seat === "upright" ? card.meaning : card.rmeaning} when {seat}!</span></div> : ""}</div>
         </div>
     )
 }
