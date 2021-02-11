@@ -83,471 +83,547 @@ const tarotDeck = [
         name: "The World",
         img: world,
         meaning: "fulfillment, harmony, completion",
-        reversed: false
+        rmeaning: "incompletion, no closure"
+ 
     },
     {
         name: "Judgement",
         img: judgement,
         meaning: "reflection, reckoning, awakening",
-        reversed: false
+        rmeaning: "lack of self awareness, doubt, self loathing"
+ 
     },
     {
         name: "The Sun",
         img: sun,
         meaning: "joy, success, celebration, positivity",
-        reversed: false
+        rmeaning: "negativity, depression, sadness"
+ 
    },
     {
         name: "The Moon",
         img: moon,
         meaning: "unconscious, illusions, intuition",
-        reversed: false
+        rmeaning: "confusion, fear, misinterpretation"
+ 
     },
     {
         name: "The Star",
         img: star,
         meaning: "hope, faith, rejuvenation",
-        reversed: false
+        rmeaning: "faithlessness, discouragement, insecurity"
+ 
     },
     {
         name: "The Tower",
         img: tower,
         meaning: "sudden upheaval, broken pride, disaster",
-        reversed: false
+        rmeaning: "disaster avoided, delayed disaster, fear of suffering"
+ 
     },
     {
         name: "The Devil",
         img: devil,
         meaning: "addiction, materialism, playfulness",
-        reversed: false
+        rmeaning: "freedom, release, restoring control"
+ 
     },
     {
         name: "Temperance",
         img: temperance,
         meaning: "middle path, patience, finding meaning",
-        reversed: false
+        rmeaning: "extremes, excess, lack of balance"
+ 
     },
     {
         name: "Death",
         img: death,
         meaning: "end of cycle, beginnings, change, metamorphosis",
-        reversed: false
+        rmeaning: "fear of change, holding on, stagnation, decay"
+ 
     },
     {
         name: "The Hanged Man",
         img: hanged,
         meaning: "sacrifice, release, martyrdom",
-        reversed: false
+        rmeaning: "stalling, needless sacrifice, fear of sacrifice"
+ 
     },
     {
         name: "Justice",
         img: justice,
         meaning: "cause and effect, clarity, truth" ,
-        reversed: false 
+        rmeaning: "dishonesty, unaccountability, unfairness"
+  
     },
     {
         name: "Wheel of Fortune",
         img: wheel,
         meaning: "change, cycles, inevitable fate",
-        reversed: false
+        rmeaning: "no control, clinging to control, bad luck"
+ 
     },
     {
         name: "The Hermit",
         img: hermit,
         meaning: "contemplation, search for truth, inner guidance",
-        reversed: false
+        rmeaning: "loneliness, isolation, lost your way"
+ 
     },
     {
         name: "Strength",
         img: strength,
         meaning: "inner strength, bravery, compassion, focus",
-        reversed: false
+        rmeaning: "self doubt, weakness, insecurity"
+ 
     },
     {
         name: "The Chariot",
         img: chariot,
         meaning: "direction, control, willpower",
-        reversed: false
+        rmeaning: "lack of control, lack of direction, aggression"
+ 
     },
     {
         name: "The Lovers",
         img: lovers,
         meaning: "partnerships, duality, union",
-        reversed: false
+        rmeaning: "loss of balance, one-sidedness, disharmony"
+ 
     },
     {
         name: "The Heirophant",
         img: heirophant,
         meaning: "tradition, conformity, morality, ethics",
-        reversed: false
+        rmeaning: "rebellion, subversiveness, new approaches"
+ 
     },
     {
         name: "The Emperor",
         img: emperor,
         meaning: "authority, structure, control, fatherhood",
-        reversed: false
+        rmeaning: "tyranny, rigidity, coldness"
+ 
     },
     {
         name: "The Empress",
         img: empress,
         meaning: "motherhood, fertility, nature",
-        reversed: false
+        rmeaning: "dependence, smothering, emptiness, nosiness"
+ 
     },
     {
         name: "The High Priestess",
         img: priestess,
         meaning: "intuitive, unconscious, inner voice",
-        reversed: false
+        rmeaning: "lack of center, lost inner voice, repressed feelings"
+ 
     },
     {
         name: "The Magician",
         img: magician,
         meaning: "willpower, desire, creation, manifestation",
-        reversed: false
+        rmeaning: "trickery, illusions, out of touch"
+ 
     },
     {
         name: "The Fool",
         img: fool,
         meaning: "innocence, new beginnings, free spirit",
-        reversed: false
+        rmeaning: "recklessness, taken advantage of, inconsideration"
+ 
     },
     {
         name: "Seven of Wands",
         img: sevenWand,
         meaning: "perseverance, defensive, maintaining control",
-        reversed: false
+        rmeaning: "give up, destroyed confidence, overwhelmed"
+ 
     },
     {
         name: "Four of Wands",
         img: fourWand,
         meaning: "community, home, celebration",
-        reversed: false
+        rmeaning: "lack of support, transience, home conflicts"
+ 
     },
     {
         name: "Ace of Wands",
         img: aceWand,
         meaning: "creation, willpower, inspiration, desire",
-        reversed: false
+        rmeaning: "lack of energy, lack of passion, boredom"
+ 
     },
     {
         name: "Ten of Wands",
         img: tenWand,
         meaning: "accomplishment, responsibility, burden",
-        reversed: false
+        rmeaning: "inability to delegate, overstressed, burnt out"
     },
     {
         name: "Nine of Wands",
         img: nineWand,
         meaning: "resilience, grit, last stand",
-        reversed: false
+        rmeaning: "exhaustion, fatigue, questioning motivations"
+ 
     },
     {
         name: "Eight of Wands",
         img: eightWand,
         meaning: "rapid action, movement, quick decisions",
-        reversed: false
+        rmeaning: "panic, waiting, slowdown"
+ 
     },
     {
         name: "Six of Wands",
         img: sixWand,
         meaning: "victory, success, public reward",
-        reversed: false
+        rmeaning: "excess pride, lack of recognition, punishment"
+ 
 
     },
     {
         name: "Five of Wands",
         img: fiveWand,
         meaning: "competition, rivalry, conflict",
-        reversed: false
+        rmeaning: "avoiding conflict, respecting differences"
+ 
     },
     {
         name: "Three of Wands",
         img: threeWand,
         meaning: "looking ahead, expansion, rapid growth",
-        reversed: false
+        rmeaning: "obstacles, delays, frustration"
+ 
     },
     {
         name: "Two of Wands",
         img: twoWand,
         meaning: "planning, making decisions, leaving home",
-        reversed: false
+        rmeaning: "fear of change, playing safe, bad planning"
+ 
     },
     {
         name: "Page of Wands",
         img: pageWand,
         meaning: "exploration, excitement, freedom",
-        reversed: false
+        rmeaning: "lack of direction, procrastination, creating conflict"
+ 
     },
     {
         name: "Queen of Wands",
         img: queenWand,
         meaning: "courage, determination, joy",
-        reversed: false
+        rmeaning: "selfishness, jealousy, insecurities"
+ 
     },
     {
         name: "King of Wands",
         img: kingWand,
         meaning: "big picture, leader, overcoming challenges",
-        reversed: false
+        rmeaning: "impulsive, overbearing, unachievable expectations"
+ 
     },
     {
         name: "Knight of Wands",
         img: knightWand,
         meaning: "action, adventure, fearlessness",
-        reversed: false
+        rmeaning: "anger, impulsiveness, recklessness"
+ 
     },
     {
         name: "King of Cups",
         img: kingCup,
         meaning: "compassion, control, balance",
-        reversed: false
+        rmeaning: "coldness, moodiness, bad advice"
+ 
     },
     {
         name: "Queen of Cups",
         img: queenCup,
         meaning: "compassion, calm, comfort",
-        reversed: false
+        rmeaning: "martyrdom, insecurity, dependence"
+ 
     },
     {
         name: "Knight of Cups",
         img: knightCup,
         meaning: "following the heart, idealist, romantic",
-        reversed: false
+        rmeaning: "moodiness, disappointment"
+ 
     },
     {
         name: "Page of Cups",
         img: pageCup,
         meaning: "happy surprise, dreamer, sensitivity",
-        reversed: false
+        rmeaning: "emotional immaturity, insecurity, disappointment"
+ 
     },
     {
         name: "Ten of Cups",
         img: tenCup,
         meaning: "inner happiness, fulfillment, dreams coming true",
-        reversed: false
+        rmeaning: "shattered dreams, broken family, domestic disharmony"
+
     },
     {
         name: "Nine of Cups",
         img: nineCup,
         meaning: "satisfaction, emotional stability, luxury",
-        reversed: false
+        rmeaning: "lack of inner joy, smugness, dissatisfaction"
+ 
     },
     {
         name: "Eight of Cups",
         img: eightCup,
         meaning: "walking away, disillusionment, leaving behind",
-        reversed: false
+        rmeaning: "avoidance, fear of change, fear of loss"
+ 
     },
     {
         name: "Seven of Cups",
         img: sevenCup,
         meaning: "searching for purpose, choices, daydreaming",
-        reversed: false
+        rmeaning: "lack of purpose, diversion, confusion"
+ 
    },
     {
         name: "Six of Cups",
         img: sixCup,
         meaning: "familiarity, happy memories, healing",
-        reversed: false
+        rmeaning: "moving forward, leaving home, independence"
+ 
     },
     {
         name: "Five of Cups",
         img: fiveCup,
         meaning: "loss, grief, self-pity",
-        reversed: false
+        rmeaning: "acceptance, moving on, finding peace"
+ 
     },
     {
         name: "Four of Cups",
         img: fourCup,
         meaning: "apathy, contemplation, disconnectedness",
-        reversed: false
+        rmeaning: "sudden awareness, choosing happiness, acceptance"
+ 
     },
     {
         name: "Three of Cups",
         img: threeCup,
         meaning: "friendship, community, happiness",
-        reversed: false
+        rmeaning: "overindulgence, gossip, isolation"
+ 
     },
     {
         name: "Two of Cups",
         img: twoCup,
         meaning: "unity, partnership, connection",
-        reversed: false
+        rmeaning: "imbalance, broken communication, tension"
+ 
     },
     {
         name: "Ace of Cups",
         img: aceCup,
         meaning: "new feelings, spirituality, intuition",
-        reversed: false
+        rmeaning: "emotional loss, blocked creativity, emptiness"
+ 
     },
     {
         name: "King of Swords",
         img: kingSword,
         meaning: "head over heart, discipline, truth",
-        reversed: false
+        rmeaning: "manipulative, cruel, weakness"
+ 
     },
     {
         name: "Knight of Swords",
         img: knightSword,
         meaning: "action, impulsiveness, defending beliefs",
-        reversed: false
+        rmeaning: "no direction, disregard for consequences, unpredictability"
+ 
     },
     {
         name: "Queen of Swords",
         img: queenSword,
         meaning: "complexity, perceptiveness, clear mindedness",
-        reversed: false
+        rmeaning: "cold hearted, cruel, bitterness"
+ 
     },
     {
         name: "Page of Swords",
         img: pageSword,
         meaning: "curiosity, restlessness, mental energy",
-        reversed: false
+        rmeaning: "deception, manipulation, all talk"
+
     },
     {
         name: "Ten of Swords",
         img: tenSword,
         meaning: "failure, collapse, defeat",
-        reversed: false
+        rmeaning: "can't get worse, only upwards, inevitable end"
+ 
     },
     {
         name: "Nine of Swords",
         img: nineSword,
         meaning: "anxiety, hopelessness, trauma",
-        reversed: false
+        rmeaning: "hope, reaching out, despair"
+ 
     },
     {
         name: "Eight of Swords",
         img: eightSword,
         meaning: "imprisonment, entrapment, self-victimization",
-        reversed: false
+        rmeaning: "self acceptance, new perspective, freedom"
+ 
     },
     {
         name: "Seven of Swords",
         img: sevenSword,
         meaning: "deception, trickery, tactics and strategy",
-        reversed: false
+        rmeaning: "coming clean, rethinking approach, deception"
+ 
     },
     {
         name: "Six of Swords",
         img: sixSword,
         meaning: "transition, leaving behind, moving on",
-        reversed: false
+        rmeaning: "emotional baggage, unresolved issues, resisting transition"
+ 
     },
     {
         name: "Five of Swords",
         img: fiveSword,
         meaning: "unbridled ambition, win at all costs, sneakiness",
-        reversed: false  
+        rmeaning: "lingering resentment, desire to reconcile, forgiveness"
+   
     },
     {
         name: "Three of Swords",
         img: threeSword,
         meaning: "heartbreak, suffering, grief",
-        reversed: false
+        rmeaning: "recovery, forgiveness, moving on"
+ 
     },
     {
         name: "Four of Swords",
         img: fourSword,
         meaning: "rest, restoration, contemplation",
-        reversed: false  
+        rmeaning: "restlessness, burnout, stress"
+   
     },
     {
         name: "Two of Swords",
         img: twoSword,
         meaning: "difficult choices, indecision, stalemate",
-        reversed: false
+        rmeaning: "lesser of two evils, no right choice, confusion"
+ 
     },
     {
         name: "Ace of Swords",
         img: aceSword,
         meaning: "breakthrough, clarity, sharp mind",
-        reversed: false
+        rmeaning: "confusion, brutality, chaos"
+ 
     },
     {
         name: "King of Pentacles",
         img: kingPent,
         meaning: "abundance, prosperity, security",
-        reversed: false
+        rmeaning: "greed, indulgence, sensuality"
+ 
     },
     {
         name: "Queen of Pentacles",
         img: queenPent,
         meaning: "practicality, creature comforts, financial security",
-        reversed: false
+        rmeaning: "self-centeredness, jealousy, smothering"
+ 
     },
     {
         name: "Knight of Pentacles",
         img: knightPent,
         meaning: "efficiency, hard work, responsibility",
-        reversed: false
+        rmeaning: "laziness, obsessiveness, work without reward"
+ 
     },
     {
         name: "Page of Pentacles",
         img: pagePent,
         meaning: "ambition, desire, diligence",
-        reversed: false    
+        rmeaning: "lack of commitment, greediness, laziness"
+     
     },
     {
         name: "Ten of Pentacles",
         img: tenPent,
         meaning: "legacy, culmination, inheritance",
-        reversed: false  
+        rmeaning: "fleeting success, lack of stability, lack of resources"
+   
     },
     {
         name: "Nine of Pentacles",
         img: ninePent,
         meaning: "fruits of labor, rewards, luxury",
-        reversed: false
+        rmeaning: "reckless spending, living beyond means, false success"
 
     },
     {
         name: "Eight of Pentacles",
         img: eightPent,
         meaning: "apprenticeship, passion, high standards",
-        reversed: false
+        rmeaning: "lack of passion, uninspired, no motivation"
+ 
     },
     {
         name: "Seven of Pentacles",
         img: sevenPent,
         meaning: "hard work, perseverance, diligence",
-        reversed: false
+        rmeaning: "work without results, distractions, lack of rewards"
+ 
     },
     {
         name: "Six of Pentacles",
         img: sixPent,
         meaning: "charity, generosity, sharing",
-        reversed: false
+        rmeaning: "strings attached, stinginess, power and domination"
+ 
     },
     {
         name: "Five of Pentacles",
         img: fivePent,
         meaning: "need, poverty, insecurity",
-        reversed: false   
+        rmeaning: "recovery, charity, improvement"
+    
     },
     {
         name: "Four of Pentacles",
         img: fourPent,
         meaning: "conservation, frugality, security",
-        reversed: false
+        rmeaning: "greediness, stinginess, possessiveness"
+ 
     },
     {
        name: "Three of Pentacles",
        img: threePent,
        meaning: "teamwork, collaboration, building",
-       reversed: false
+       rmeaning: "lack of teamwork, disorganized, group conflict"
+
     },
     {
         name: "Two of Pentacles",
         img: twoPent,
         meaning: "balancing decisions, priorities, adapting to change",
-        reversed: false
+        rmeaning: "loss of balance, disorganized, overwhelmed"
+ 
     },
     {
        name: "Ace of Pentacles",
        img: acePent,
        meaning: "opportunity, prosperity, new venture",
-       reversed: false
+       rmeaning: "lost opportunity, missed chance, bad investment"
+
     }
 ]
 

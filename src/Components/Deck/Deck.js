@@ -7,6 +7,7 @@ import './Deck.css'
 function Deck() {
     const [deck, setDeck] = useState(tarotDeck)
     const [card, setCard] = useState("") 
+    const [position, setPosition] = useState(true)
     // const [image, setImage] = useState("")
 
     function getRandomInt(max) {
@@ -15,25 +16,13 @@ function Deck() {
     
     function getCard() {
         const index = getRandomInt(deck.length);
-        isReversed()
         setCard(deck[index])
-        // const postImg = require('./tarot_cards/' + card.img)
+        reversed()
+        console.log("Position is: " + position)
     }
 
     function determineRand() {
-        const max = 1;
-        const min = 0;
-        return(Math.random() * (max - min + 1) + min)
-    }
-
-    function isReversed() {
-        const rev = determineRand()
-        if(rev === 0) {
-            card.reversed = false;
-        }
-        else if(rev === 1) {
-            card.reversed = true;
-        }
+        return(Math.random())
     }
 
     useEffect(() => {
@@ -48,8 +37,15 @@ function Deck() {
     }
 
     function reversed() {
-        
+        const revPos = determineRand()
+        if(revPos > 0.5) {
+            setPosition(true)
+        }
+        else if(revPos < 0.5) {
+            setPosition(false)
+        }
     }
+
     
     return (
         <div className="table">
@@ -59,6 +55,7 @@ function Deck() {
             <button className="btn2" onClick={resetDeck}>Reset Deck</button>
             </div>
             {/* <div>{card && card.img ? <img src={require(`${PATH}${card.img}`)} alt={card.name}/> : ""}</div> */}
+            
             <div>{card && card.img ? <img className="card" src={card.img} alt={card.name}/> : ""}</div>
             <div className="meaning">{card.meaning ? <div>{card.name} means: <hr /> <span>{card.meaning} when upright!</span></div> : ""}</div>
         </div>
